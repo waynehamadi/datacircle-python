@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "datacircle"
+version = "0.1.0"
+description = "Python client for the Datacircle API: find the best GTM APIs"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["gtm", "api", "api-directory", "api-pricing", "b2b-data", "agents", "llm-tools"]
+
+[project.urls]
+Homepage = "https://datacircle.dev"
+Documentation = "https://api.datacircle.dev/v1/openapi.json"
+Repository = "https://github.com/waynehamadi/datacircle-python"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/datacircle"]
